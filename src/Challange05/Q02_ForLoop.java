@@ -1,3 +1,5 @@
+package Challange05;
+
 public class Q02_ForLoop {
         //Interview Question
         // 0-255 e kadar olan harflerin , sayı ve harf değerini ekrana yazdırınız.

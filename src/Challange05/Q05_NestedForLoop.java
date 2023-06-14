@@ -1,3 +1,5 @@
+package Challange05;
+
 public class Q05_NestedForLoop {
     /*
 	 	Get the number of rows and columns from user.

@@ -1,3 +1,5 @@
+package Challange05;
+
 public class Q08_ForLoop {
 
     // Kullanicidan iki sayi isteyin.

@@ -1,3 +1,5 @@
+package Challange05;
+
 public class Q03_ForLoop {
 
     //Convert "Java" to "J*a*v*a*"
