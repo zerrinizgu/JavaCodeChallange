@@ -14,6 +14,18 @@ public class Task08 {
 
     public static void main(String[] args) {
 
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("agam yıl sayi giresen : ");
+        int yıl = input.nextInt();
+
+        System.out.println(artıkYılControlEt(yıl));
+    }
+
+    private static String artıkYılControlEt(int yıl) {
+
+        return
+                ( yıl%4==0 && (yıl%100!=0||yıl%400==0)) ?"girilen yıl ARTIK" :"girilen yıl ARTIK DEĞİL";
     }
 
 }
