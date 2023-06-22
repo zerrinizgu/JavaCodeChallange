@@ -11,6 +11,11 @@ public class Task01 {
         */
 
         int arr[] = {2,6,4,5,8,9};
+        System.out.println("array elemanları  : "+Arrays.toString(arr));
+        for (int i = 0; i < arr.length; i++) {//arr elemanlarının tekrara alıan loop tanımlandı
+            arr[i]*=arr[i];// arr[i]=arr[i]*arr[i];
+        }
+        System.out.println("array elemanları kareleri : "+Arrays.toString(arr));
 
 
     }
