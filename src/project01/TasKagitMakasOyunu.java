@@ -1,6 +1,4 @@
-package project;
-
-import java.util.Scanner;
+package project01;
 
 public class TasKagitMakasOyunu {
     public static void main(String[] args) {
