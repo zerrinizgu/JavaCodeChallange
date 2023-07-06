@@ -14,6 +14,25 @@ public class Q11_PerfectNumber {
     */
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bizim ooolannn bişeyleee girceng mi : ");
+
+        int sayi = input.nextInt();
+
+        System.out.println(perfectNumberControl(sayi));
+
+
+    }//main sonu
+
+    private static  String perfectNumberControl(int sayi) {
+
+        int toplam = 0;
+        for (int i = 1; i < sayi; i++) {
+            if (sayi % i == 0) {
+                toplam += i;
+            }
+        }
+        return toplam == sayi ? "PERFECT NUMBER" : "unperfect number";
 
     }
-}
+}//Class sonu

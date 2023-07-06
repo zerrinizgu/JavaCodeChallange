@@ -9,9 +9,21 @@ public class Q08_ArmstrongNumber {
             153 = 1*1*1 + 5*5*5 + 3*3*3 = 153
             370 = 3*3*3 + 7*7*7 + 0*0*0 = 370
 
-          soru2: Birden baslayarak girilen sayıya kadar her bir tamsayının amstrong sayı olup olmadıgını
-          gösteren program yazınız */
+          */
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Bizim ooolannn bişeyleee girceng mi : ");
+        int rakamKupToplam = 0;
+        int sayi = input.nextInt();
+        int girilenSayi=sayi;
+        while (sayi > 0) {
+            //rakamKupToplam+= (sayi%10*sayi%10*sayi%10);
+            rakamKupToplam += Math.pow(sayi % 10, 3);
+            sayi /= 10;
+        }
+        if (rakamKupToplam == girilenSayi) {
+            System.out.println("bizim oolann sayi " + girilenSayi + " AMSTRONG :) ");
+        } else System.out.println("bizim oolann sayi " + girilenSayi + " AMSTRONG  değil :( ");
 
     }
 }
