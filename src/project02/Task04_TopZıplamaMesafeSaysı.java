@@ -15,13 +15,20 @@ public class Task04_TopZıplamaMesafeSaysı {
     public static void main(String[] args) {
 
 
-        Scanner scan = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("topun birakildigi ilk yuksekligi  giriniz : ");
-        double yukseklik = scan.nextDouble();
-        double topunToplamYolu=0;
-        int yereVurmaSayisi=0;
-
-
+        double yukseklik = input.nextDouble();
+        double topunToplamYolu = 0;
+        int yereVurmaSayisi = 0;
+        do {
+            yereVurmaSayisi++;
+            topunToplamYolu+=yukseklik;
+            yukseklik*=(0.75);
+            topunToplamYolu+=yukseklik*2;
+        }
+        while (yukseklik >= 1);
+        System.out.println("yereVurmaSayisi = " + yereVurmaSayisi);
+        System.out.println("topunToplamYolu = " + topunToplamYolu);
 
     }
 }

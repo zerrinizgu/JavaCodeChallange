@@ -15,8 +15,37 @@ public class Task07_RomaRakamlari {
 		   		 Parantez içindeki karakterler artan sıradadır (C-100, M-1000) ---> [C M]=900
 		*/
     public static void main(String[] args) {
+         String sayi = "MCMXLV";
+       // String sayi = "DCCCV";
+        System.out.println("yakarımRomayı(sayi) = " + yakarımRomayı(sayi));
 
+    }//main sonu
 
+    private static int yakarımRomayı(String sayi) {//MCMXLV
+        int rakamToplam = 0;
+        for (int i = 0; i < sayi.length() - 1; i++) {
+            if (romaRakam(sayi.charAt(i)) < romaRakam(sayi.charAt(i + 1))) {
+                rakamToplam += romaRakam(sayi.charAt(i + 1)) - romaRakam(sayi.charAt(i));
+                sayi = sayi.replace(sayi.substring(i, i + 2), "");//CM öldü
+                i--;
+            }
+
+        }
+        for (int i = 0; i < sayi.length(); i++) {
+            rakamToplam += romaRakam(sayi.charAt(i));
+        }
+        return rakamToplam;
+    }
+
+    public static int romaRakam(char a) {//Roma rakamlarını numerik değer return ediyor
+        if (a == 'I') return 1;
+        if (a == 'V') return 5;
+        if (a == 'X') return 10;
+        if (a == 'L') return 50;
+        if (a == 'C') return 100;
+        if (a == 'D') return 500;
+        if (a == 'M') return 1000;
+        return 0;
 
     }
-}
+}//Class sonu

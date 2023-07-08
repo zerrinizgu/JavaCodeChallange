@@ -12,10 +12,20 @@ public class Task06_ElementUpdateList {
 
     public static void main(String[] args) {
 
-    List<Integer> list = Arrays.asList(12, 11, 12, 15, 12, 34, 43);
+         List<Integer> list = Arrays.asList(12, 11, 12, 15, 12, 34, 43);
+        //List<Integer> list = Arrays.asList(13, 11, 13, 15, 13, 34, 43);
+        System.out.println(list);
+        if (list.contains(12)) {
+            for (int avuc : list) {
+                if (avuc == 12) {
+                  //  list.set(list.indexOf(avuc), 21);
+                    list.set(list.indexOf(12), 21);
+                }
+            }
+        }
 
 
-    System.out.println(list);
-}
+        System.out.println(list);
+    }
 
 }
