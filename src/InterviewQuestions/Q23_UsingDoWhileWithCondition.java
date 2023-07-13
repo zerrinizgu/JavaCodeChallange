@@ -11,7 +11,14 @@ public class Q23_UsingDoWhileWithCondition {
         değilse "Lost!" print eden code create ediniz.
     */
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
+        System.out.println("Biiziim olan bisayı gireceng mi :");
+
+        int sayi = input.nextInt();
+        if (sayi<100) {
+            System.out.println("Won!");
+        }else System.out.println("Lost!");
 
     }
 
