@@ -2,21 +2,24 @@ package P03_sanslıKullanıcı;
 
 import java.time.LocalDateTime;
 
-//task 1. stepp
-public class Kullanıcı {//kullanıcı obj uretecek kalıphane class -> main olmaz
+public class Kullanıcı { // step 1-> kullanıcı obj uretecek main olmayan pojo class
 
-    String name;//obj de değer alacak inst. var.
-    LocalDateTime kayıtZamanı;//obj de değer alacak inst. var.
 
-    public Kullanıcı(String name, LocalDateTime kayıtZamanı) {//full p'li teleskopik cons.
-        this.name = name;
+    String  name;
+    LocalDateTime kayıtZamanı;
+
+   // public Kullanıcı() {//p'siz cons
+   // }
+
+    public Kullanıcı(String name, LocalDateTime kayıtZamanı) {//obj uretecek full p'li telescopic const.        this.name = name;
         this.kayıtZamanı = kayıtZamanı;
+        this.name = name;;
     }
 
     @Override
-    public String toString() {//bu class'dan olusturulan obj print etmek için obj datalarını string'e cevirir
+    public String toString() {// obj field'larını stringe çeviren   meth
         return
                 "name='" + name + '\'' +
-                        ", kayıtZamanı=" + kayıtZamanı;
+                ", kayıtZamanı=" + kayıtZamanı ;
     }
 }
